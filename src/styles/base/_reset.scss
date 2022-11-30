@@ -4,7 +4,7 @@
 *::after
 *::before {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -15,4 +15,13 @@ html {
 
 ul {
   margin: 0px;
+}
+
+a {
+  text-decoration: none;;
+  color: black;
+}
+
+li {
+  text-decoration: none;
 }

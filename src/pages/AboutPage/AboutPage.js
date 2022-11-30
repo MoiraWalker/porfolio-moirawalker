@@ -5,7 +5,7 @@ import './AboutPage.scss'
 const AboutPage= () => {
     return (
       <div className="about-page">
-        <h1>About page</h1>
+        <p>about page</p>
       </div>
     )
 }

@@ -23,7 +23,9 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 22rem;
+  font-weight: 400;
+  margin:0;
 }
 
 h2 {
@@ -33,6 +35,7 @@ h2 {
 h3 {
   font-size: 1em;
 }
+ 
 
 .link {
   text-decoration: none;
