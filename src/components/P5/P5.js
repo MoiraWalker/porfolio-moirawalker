@@ -1,12 +1,9 @@
 import React from "react";
 import Sketch from "react-p5";
-import { useEffect, useRef } from "react";
-
 
 export const P5 = () => {
-
       const setup = (p5, canvasParentRef) => {
-		p5.createCanvas(p5.windowWidth, p5.windowHeight).parent(canvasParentRef);
+		p5.createCanvas(p5.displayWidth, p5.displayHeight).parent(canvasParentRef);
         p5.noStroke();
         p5.background("white")
 	};
@@ -18,7 +15,11 @@ export const P5 = () => {
         p5.frameRate(10);
 	};
 
-	return <Sketch setup={setup} draw={draw} />;
+    const resetBg = (p5) => {
+        p5.background("white")
+    }
+
+	return <Sketch  mouseClicked={resetBg} setup={setup} draw={draw} />;
 
 }
 
