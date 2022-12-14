@@ -1,24 +1,21 @@
-import './App.scss';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { AppRouter } from './routing/AppRouter';
-import { Navigation } from './components/navigation/Navigation'
-import { P5 } from './components/P5/P5';
+import "./App.scss";
+import { BrowserRouter as Router } from "react-router-dom";
+import { AppRouter } from "./routing/AppRouter";
+import { NavBar, NavBurger } from "./components/navigation";
+import { BurgerBarContextProvider } from "./context/burgerBarContextProvider/burgerBarContextProvider";
+import { NavApp } from "./components/navigation/navApp/navApp";
 
 function App() {
   return (
     <div className="App">
-       <Router>
-          <Navigation/>
+      <Router>
+        <BurgerBarContextProvider>
+          <NavApp />
           <AppRouter />
-
-        </Router>
-
-
-      
+        </BurgerBarContextProvider>
+      </Router>
     </div>
   );
 }
 
 export default App;
-
-

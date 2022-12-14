@@ -1,0 +1,54 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/base/typography";
+
+.navmobile {
+  position: absolute;
+  padding: 5rem;
+
+  &__list {
+    &--open {
+      display: flex;
+      flex-direction: column;
+      visibility: visible;
+    }
+
+    &--closed {
+      display: none;
+      visibility: hidden;
+    }
+
+    @include breakpoint(screen-m) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__link {
+    background-color: green;
+    width: 100vw;
+    font-family: Roboto;
+    font-size: 3.5rem;
+    margin-left: 3rem;
+
+    &:hover {
+      border-bottom: 4px $primary solid;
+    }
+  }
+}
+
+.logo {
+  &--closed {
+    font-family: philosopher;
+    font-size: 5rem;
+
+    &:hover {
+      font-style: italic;
+    }
+  }
+
+  &--open {
+    display: none;
+    visibility: hidden;
+  }
+}
