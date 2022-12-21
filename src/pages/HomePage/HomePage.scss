@@ -1,12 +1,33 @@
+@import "../../styles/abstracts/mixins";
 
 .page {
-      display: flex;
-      align-items: center;
-      height: 100vh;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 
+  &__title {
+    position: absolute;
+    padding-left: 5rem;
+    font-size: 2rem;
+  }
 
-    &__title {
-      position: absolute;
-      padding-left: 5rem;
-    } 
+  h1 {
+    font-size: 9rem;
+
+    @include breakpoint(screen-s) {
+      font-size: 13rem;
+    }
+
+    @include breakpoint(screen-m) {
+      font-size: 18rem;
+    }
+
+    @include breakpoint(screen-l) {
+      font-size: 22rem;
+    }
+
+    @include breakpoint(screen-xl) {
+      font-size: 24rem;
+    }
+  }
 }

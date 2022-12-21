@@ -31,7 +31,6 @@ export const NavBurger = () => {
           }
         ></div>
       </div>
-      <NavMobile open={setOpen} />
     </>
   );
 };

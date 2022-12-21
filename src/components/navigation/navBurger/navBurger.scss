@@ -5,12 +5,12 @@
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap;
-  width: 26px;
-  height: 26px;
-  position: fixed;
-  right: 40px;
-  z-index: 100;
-  padding: 6.5rem 2rem;
+  width: 3rem;
+  height: 3rem;
+  // position: fixed;
+  // right: 40px;
+  // z-index: 100;
+  padding: 1rem 0;
 
   &-bar {
     width: 100%;

@@ -3,8 +3,31 @@
 @import "../../../styles/base/typography";
 
 .navmobile {
-  position: absolute;
-  padding: 5rem;
+  &--open {
+    background-color: $primary;
+    position: absolute;
+    padding: 5rem;
+  }
+
+  &--closed {
+    position: absolute;
+    padding: 5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__wrapper {
+    &--closed {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &--open {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
   &__list {
     &--open {
@@ -25,7 +48,6 @@
   }
 
   &__link {
-    background-color: green;
     width: 100vw;
     font-family: Roboto;
     font-size: 3.5rem;
