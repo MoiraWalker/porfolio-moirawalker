@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 export const NavApp = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 700;
+  const breakpoint = 740;
 
   useEffect(() => {
     const handleResizeWindow = () => setWidth(window.innerWidth);
@@ -15,7 +15,6 @@ export const NavApp = () => {
       window.removeEventListener("resize", handleResizeWindow);
     };
   }, []);
-
   {
     return width > 700 ? <NavDesktop /> : <NavMobile />;
   }
