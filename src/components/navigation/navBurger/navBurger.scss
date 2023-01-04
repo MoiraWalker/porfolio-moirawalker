@@ -7,13 +7,12 @@
   flex-flow: column nowrap;
   width: 3rem;
   height: 3rem;
-  padding: 1rem 0;
   align-self: flex-end;
 
   &-bar {
     width: 100%;
     border-radius: 20px;
-    transform-origin: -1px;
+    transform-origin: 0px;
 
     &-top {
       transform-origin: left bottom;

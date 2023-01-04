@@ -39,6 +39,7 @@
       display: flex;
       flex-direction: column;
       visibility: visible;
+      padding: 50% 0;
     }
 
     &--closed {
@@ -53,14 +54,12 @@
   }
 
   &__link {
-    width: 100vw;
-    font-family: Roboto;
-    font-size: 3.5rem;
-    margin-left: 3rem;
-
-    &:hover {
-      border-bottom: 4px $primary solid;
-    }
+    color: white;
+    font-size: large;
+    font-family: philosopher;
+    font-size: 5rem;
+    text-align: center;
+    padding: 0.5rem 0;
   }
 }
 
