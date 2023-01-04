@@ -16,6 +16,6 @@ export const NavApp = () => {
     };
   }, []);
   {
-    return width > 700 ? <NavDesktop /> : <NavMobile />;
+    return width > 740 ? <NavDesktop /> : <NavMobile />;
   }
 };

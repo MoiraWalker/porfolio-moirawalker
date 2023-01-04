@@ -25,7 +25,7 @@ const HomePage = () => {
         <h1>Moira</h1>
         <h1>Walker</h1>
       </div>
-      {width > 700 && <P5 />}
+      {width > 740 && <P5 />}
     </div>
   );
 };
