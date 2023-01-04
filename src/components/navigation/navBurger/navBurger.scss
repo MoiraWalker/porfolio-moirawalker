@@ -2,12 +2,23 @@
 @import "../../../styles/abstracts/mixins";
 
 .burger {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: column nowrap;
-  width: 3rem;
-  height: 3rem;
-  align-self: flex-end;
+  &--closed {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    width: 3rem;
+    height: 3rem;
+    align-self: center;
+  }
+
+  &--open {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    width: 3rem;
+    height: 3rem;
+    align-self: flex-end;
+  }
 
   &-bar {
     width: 100%;

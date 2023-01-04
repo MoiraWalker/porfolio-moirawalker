@@ -8,7 +8,11 @@ export const NavBurger = () => {
 
   return (
     <>
-      <div className="burger" open={open} onClick={() => setOpen(!open)}>
+      <div
+        className={open ? "burger--open" : "burger--closed"}
+        open={open}
+        onClick={() => setOpen(!open)}
+      >
         <div
           className={
             open
