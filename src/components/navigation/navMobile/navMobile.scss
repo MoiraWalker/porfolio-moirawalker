@@ -5,7 +5,6 @@
 .navmobile {
   &--open {
     background-color: $primary;
-    position: absolute;
     padding: 5rem;
   }
 
@@ -26,6 +25,7 @@
     &--open {
       display: flex;
       flex-direction: column;
+      height: 100vh;
     }
   }
 
