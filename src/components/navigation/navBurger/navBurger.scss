@@ -7,16 +7,13 @@
   flex-flow: column nowrap;
   width: 3rem;
   height: 3rem;
-  // position: fixed;
-  // right: 40px;
-  // z-index: 100;
   padding: 1rem 0;
+  align-self: flex-end;
 
   &-bar {
     width: 100%;
     border-radius: 20px;
     transform-origin: -1px;
-    border: solid 2px black;
 
     &-top {
       transform-origin: left bottom;
@@ -25,10 +22,12 @@
 
       &--open {
         transform: rotate(45deg);
+        border: solid 2px white;
       }
 
       &--closed {
         transform: rotate(0deg);
+        border: solid 2px black;
       }
     }
 
@@ -36,11 +35,13 @@
       &--open {
         transform: translateX(100%);
         opacity: 0;
+        border: solid 2px white;
       }
 
       &--closed {
         transform: translateX(0);
         opacity: 1;
+        border: solid 2px black;
       }
     }
 
@@ -51,10 +52,12 @@
 
       &--open {
         transform: rotate(-45deg);
+        border: solid 2px white;
       }
 
       &--closed {
         transform: rotate(0deg);
+        border: solid 2px black;
       }
     }
   }
