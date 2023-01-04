@@ -40,8 +40,9 @@
     &--open {
       display: flex;
       flex-direction: column;
-      visibility: visible;
-      padding: 50% 0;
+      margin: -3rem;
+      height: 100%;
+      justify-content: center;
     }
 
     &--closed {
