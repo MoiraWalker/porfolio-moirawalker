@@ -23,16 +23,32 @@ export const NavMobile = () => {
         <ul
           className={open ? "navmobile__list--open" : "navmobile__list--closed"}
         >
-          <Link class="navmobile__link" to="/design">
+          <Link
+            class="navmobile__link"
+            onClick={() => setOpen(!open)}
+            to="/design"
+          >
             Design
           </Link>
-          <Link class="navmobile__link" to="/art">
+          <Link
+            class="navmobile__link"
+            onClick={() => setOpen(!open)}
+            to="/art"
+          >
             Art
           </Link>
-          <Link class="navmobile__link" to="/code">
+          <Link
+            class="navmobile__link"
+            onClick={() => setOpen(!open)}
+            to="/code"
+          >
             Code
           </Link>
-          <Link class="navmobile__link" to="/about">
+          <Link
+            class="navmobile__link"
+            onClick={() => setOpen(!open)}
+            to="/about"
+          >
             About
           </Link>
         </ul>
